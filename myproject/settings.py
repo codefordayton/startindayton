@@ -196,7 +196,7 @@ ROOT_URLCONF = "%s.urls" % PROJECT_APP
 # or "C:/www/django/templates".
 # Always use forward slashes, even on Windows.
 # Don't forget to use absolute paths, not relative paths.
-TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
+TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "solid/templates"),os.path.join(PROJECT_ROOT, "templates"),)
 
 
 ################
@@ -204,6 +204,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "solid",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
